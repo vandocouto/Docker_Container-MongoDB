@@ -1,0 +1,19 @@
+version: '2'
+services:
+ MongoDB:
+  image: mongodb:1.0.0
+  hostname: mongodb
+  container_name: mongodb
+  privileged: true
+  volumes:
+   - pgvolume:/data/db
+  expose:
+   - "22"
+   - "27017"
+  ports:
+   - "127.0.0.1:2200:22"
+   - "27017:27017"
+volumes:
+ pgvolume:
+  external:
+   name: MongoDB
