@@ -1,11 +1,8 @@
 # Docker Container MongoDB
 
-
+- Criando o volume MongoDB
 <pre>
 # docker volume create --name MongoDB
-</pre>
-
-<pre>
 </pre>
 
 - Iniciando o container
